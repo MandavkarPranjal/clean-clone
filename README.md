@@ -5,7 +5,7 @@ Clone a git repo to a sandbox directory with clean working tree (no uncommitted 
 ## Install
 
 ```bash
-curl -o ~/.local/bin/clean-clone https://raw.githubusercontent.com/MandavkarPranjal/clean-clone/main/clone-clean
+curl -o ~/.local/bin/clean-clone https://raw.githubusercontent.com/MandavkarPranjal/clean-clone/main/clean-clone
 chmod +x ~/.local/bin/clean-clone
 ```
 
@@ -26,11 +26,11 @@ Run from any git repo directory:
 clean-clone
 ```
 
-Creates clone at `~/sandbox-test/{repo-name}-{random-hash}/`.
+Creates clone at `~/sandbox/{repo-name}-{random-hash}/`.
 
 ### Options
 
-- First argument: custom destination directory (default: `~/sandbox-test`)
+- First argument: custom destination directory (default: `~/sandbox`)
 
 ```bash
 clean-clone ~/my-custom-dir
