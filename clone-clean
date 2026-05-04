@@ -4,6 +4,8 @@ set -e
 
 DEST_BASE="${1:-$HOME/sandbox}"
 
+mkdir -p "$DEST_BASE"
+
 CURRENT_DIR="$(pwd)"
 REPO_NAME="$(basename "$CURRENT_DIR")"
 RANDOM_HASH="$(head -c 8 /dev/urandom | xxd -p)"
